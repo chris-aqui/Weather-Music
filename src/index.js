@@ -6,3 +6,9 @@ import App from './components/App';
 // Style
 
 render(<App />, document.querySelector('#main'));
+
+/*
+Will ask user for loication and then display the weather in the area.
+App will then recommend a spotify playlist.
+
+*/
