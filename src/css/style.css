@@ -1,1 +1,19 @@
 /* All styling will go here */
+body{
+  background-color:#358AC2;
+}
+#main{
+  color: #D9B310;
+  display: flex;
+  justify-content: center;
+}
+
+header.top{
+  background-color:rgba(30, 38, 49, 55%);
+  ;
+  /* border: black solid 2px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px 10px;;
+}

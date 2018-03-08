@@ -4,6 +4,7 @@ import { render } from "react-dom"; // only importing the render method here
 import App from './components/App';
 
 // Style
+import Style from './css/style.css';
 
 render(<App />, document.querySelector('#main'));
 
