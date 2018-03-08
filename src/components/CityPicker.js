@@ -1,26 +1,23 @@
 import React from 'react';
 
 class CityPicker extends React.Component {
-	myInput = React.createRef();
-	goToCity = event => {
-		event.preventDefault();
-		const cityName = this.myInput.value.value;
-		this.props.history.push(`/store/${cityName}`);
-	};
+  constructor(props) {
+    super(props);
+    this.goToCity = this.goToCity.bind(this);
+  }
+
+
 	render() {
 		return (
-			<form className="store-selector" onSubmit={this.goToCity}>
-				<input
-					type="text"
-					ref={this.myInput}
-					required
-					placeholder="Whats your City?"
-					defaultValue="Toronto"
-				/>
-				<button type="submit">Go!</button>
-			</form>
+			<form className="city-selector" onSubmit={this.props.goToCity} >
+        <input type="text"
+          required
+          placeholder="Whats your City?" />
+        <button type="submit"> Go!</button>
+        </form>
 		);
 	}
 }
 
 export default CityPicker;
+
