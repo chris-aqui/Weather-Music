@@ -26,3 +26,6 @@ class App extends Component {
 		}
 	}
 	export default App;
+
+
+	//darkSky https://api.darksky.net/forecast/{myAPI}/{lat},{lon}
