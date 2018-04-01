@@ -2,9 +2,9 @@ import React from "react";
 import { render } from "react-dom"; // only importing the render method here
 // Components
 import App from './components/App';
-
 // Style
-import Style from './css/style.css';
+// import Style from './css/style.css';
+import 'tachyons';
 
 render(<App />, document.querySelector('#main'));
 
